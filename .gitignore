@@ -1,0 +1,17 @@
+# .gitignore
+# Node.js
+node_modules/
+dist/
+.env
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Docker
+**/postgres-data/
