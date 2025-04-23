@@ -32,7 +32,7 @@ public class AuthController : ControllerBase
         {
             Id = Guid.NewGuid(),
             FullName = request.FullName,
-            CPF = request.CPF,
+            // CPF = request.CPF,
             Email = request.Email,
             PasswordHash = ComputeSha256Hash(request.Password),
             CreatedAt = DateTime.UtcNow

@@ -11,7 +11,7 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<User> Users => Set<User>(); // Exemplo, você pode remover ou adaptar depois
+    public DbSet<User> Users => Set<User>(); // Exemplo
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
