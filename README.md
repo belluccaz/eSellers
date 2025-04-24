@@ -78,5 +78,5 @@ npm run dev
 
 ## ✨ Autor
 
-Lucas Bellucci • @lucasbellucci  
+Lucas Bellucci • @belluccaz  
 **Vai Corinthians!**
