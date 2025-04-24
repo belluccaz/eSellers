@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using eSellers.Domain.Entities;
 
-namespace eSellers.Infrastructure.Persistence;
+namespace eSellers.Infrastructure.Data.Context;
 
 public class ApplicationDbContext : DbContext
 {

@@ -1,0 +1,67 @@
+.container {
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(to right, #002244, #003366);
+  color: #fff;
+}
+
+.section {
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  color: #002244;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.editButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffaa00;
+  color: #002244;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: #ffcc33;
+}
+
+.certForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.certForm input[type="file"],
+.certForm input[type="password"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+.certForm button {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  background-color: #ffaa00;
+  color: #002244;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.certForm button:hover {
+  background-color: #ffcc33;
+}

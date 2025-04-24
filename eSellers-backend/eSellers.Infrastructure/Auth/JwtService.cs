@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using eSellers.Domain.Entities;
 
-namespace eSellers.Infrastructure.Services.Auth;
+namespace eSellers.Infrastructure.Auth;
 
 public class JwtService
 {

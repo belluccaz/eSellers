@@ -1,78 +1,78 @@
 # eSellers - ERP + Integrador de Marketplaces
 
-O **eSellers** é um sistema ERP moderno com foco em integração de canais de venda (e-commerce, PDV, marketplaces). Ele possibilita a gestão completa de pedidos, produtos, clientes e integrações, com emissão de NF-e e comunicação com SEFAZ.
+**eSellers** é uma plataforma ERP moderna com foco em integração de canais de venda (marketplaces, e-commerces e PDVs), gestão de produtos e pedidos, emissão de notas fiscais e controle de integrações. Esta versão representa o frontend completo do MVP.
 
 ---
 
-## 🔧 Tecnologias
+## 🚀 Tecnologias Utilizadas
 
-- **Frontend:** React + TypeScript + CSS Modules (SCSS)
-- **Backend:** ASP.NET Core 8 (em desenvolvimento)
-- **Banco de Dados:** PostgreSQL via Docker
-- **Outros:** JWT, Swagger, Docker Compose
+- **Frontend:** React + TypeScript
+- **Estilo:** CSS Modules com SCSS
+- **Gráficos:** Recharts
+- **Roteamento:** React Router v6
+- **Mock de dados:** localStorage + arquivos `mocks/`
 
 ---
 
-## 🖥️ Funcionalidades já implementadas
+## ✅ Funcionalidades do Frontend
 
-### ✅ Frontend
-
-- Autenticação com JWT (mock ativo)
-- Navbar dinâmica com rotas protegidas
-- Sidebar exibida somente para usuários autenticados
+- Autenticação com contexto e simulação JWT (`mockUser`)
+- Navbar dinâmica (com login/logout) e Sidebar protegida
 - Dashboard com:
   - Cards de status de pedidos
-  - Gráfico de pizza por status (`recharts`)
-  - Gráfico de barras por mês (`recharts`)
+  - Gráfico de pizza por status
+  - Gráfico de barras por mês
   - Lista de últimos pedidos
 - Produtos:
-  - Listagem de produtos (manuais e integrados)
-  - Criação de produto manual
-  - Edição de produto manual
-  - Exclusão de produto manual
-  - Importação de produtos de canais (mockados: Mercado Livre e Shopee)
+  - Listagem de produtos (manuais e importados)
+  - Criação, edição e exclusão de produtos manuais
+  - Importação de produtos simulada por canal
 - Pedidos:
-  - Listagem com filtro por status
-  - Visualização de detalhes
+  - Listagem com filtros por status
+  - Visualização de detalhes do pedido
+- Integrações:
+  - UI de conexão com canais (Mercado Livre, Shopee, Amazon)
+  - Simulação de status conectado/não conectado
+- Certificados:
+  - Formulário de upload de certificado digital `.pfx` com senha
+- Página de configurações (`SettingsPage`)
+- Página de perfil (visual)
+- Página 404 personalizada
 
 ---
 
-## 🚧 Próximas etapas
-
-- Página `SettingsPage` com:
-  - Preferências
-  - Gerenciamento de Integrações
-- Integração real com backend (produtos/pedidos)
-- Edição de perfil
-- Dashboard modularizada por perfil
-
----
-
-## 💬 Modo desenvolvimento
-
-- Rodar frontend:
-  ```bash
-  cd eSellers-frontend
-  npm install
-  npm run dev
-  ```
-
-- Backend em breve...
-
----
-
-## 📁 Organização
+## 📦 Estrutura de Pastas
 
 ```
-eSellers/
-├── eSellers-frontend/
+eSellers-frontend/
+├── src/
 │   ├── pages/
 │   ├── components/
 │   ├── mocks/
+│   ├── context/
+│   ├── hooks/
+│   ├── routes/
 │   └── styles/
-├── eSellers-backend/  (em desenvolvimento)
-└── docs/
 ```
+
+---
+
+## 🧪 Como Rodar
+
+```bash
+cd eSellers-frontend
+npm install
+npm run dev
+```
+
+---
+
+## 📘 Próximas Etapas (backend)
+
+- Criar endpoints reais para autenticação, produtos, pedidos, integrações, certificados
+- Implementar a estrutura modular no backend (conforme docs .NET)
+- Conectar o frontend às APIs reais, substituindo mocks
+- Aplicar segurança (JWT real, proteção de rotas via token)
 
 ---
 

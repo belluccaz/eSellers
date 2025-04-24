@@ -11,6 +11,8 @@ import { OrderDetailsPage } from "./pages/OrderDetailsPage/OrderDetailsPage";
 import { ProductsPage } from "./pages/ProductsPage/ProductsPage";
 import { ProductCreatePage } from "./pages/ProductCreatePage/ProductCreatePage";
 import { ProductEditPage } from "./pages/ProductEditPage/ProductEditPage";
+import { SettingsPage } from "./pages/SettingsPage/SettingsPage";
+import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
@@ -27,7 +29,8 @@ function App() {
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/products/create" element={<ProductCreatePage />} />
             <Route path="/products/edit/:id" element={<ProductEditPage />} />
-
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
             {/* Rotas protegidas dentro do layout */}
             <Route
               path="/*"
