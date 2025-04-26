@@ -1,7 +1,7 @@
 using eSellers.Application.DTOs.Auth;
-using eSellers.Infrastructure.Services.Auth;
+using eSellers.Infrastructure.Auth;
 using eSellers.Domain.Entities;
-using eSellers.Infrastructure.Persistence;
+using eSellers.Infrastructure.Data.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;

@@ -1,4 +1,4 @@
-using eSellers.Infrastructure.Persistence;
+using eSellers.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;

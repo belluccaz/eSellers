@@ -30,7 +30,7 @@ function App() {
             <Route path="/products/create" element={<ProductCreatePage />} />
             <Route path="/products/edit/:id" element={<ProductEditPage />} />
             <Route path="/settings" element={<SettingsPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            {/* <Route path="?*" element={<NotFoundPage />} /> */}
             {/* Rotas protegidas dentro do layout */}
             <Route
               path="/*"
