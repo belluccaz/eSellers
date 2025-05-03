@@ -16,8 +16,4 @@
     <ProjectReference Include="..\eSellers.Infrastructure\eSellers.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Middlewares/" />
-  </ItemGroup>
-
 </Project>

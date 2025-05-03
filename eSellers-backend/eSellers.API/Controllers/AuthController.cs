@@ -76,4 +76,12 @@ public class AuthController : ControllerBase
         var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(rawData));
         return BitConverter.ToString(bytes).Replace("-", "").ToLower();
     }
+
+    [HttpPost("refresh-token")]
+    public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequest request)
+    {
+
+
+        return Ok(new { success = true, token = "novo-acess-token" });
+    }
 }

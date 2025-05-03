@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="UseCases/" />
-    <Folder Include="Validators/" />
   </ItemGroup>
 
   <PropertyGroup>

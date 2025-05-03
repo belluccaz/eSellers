@@ -1,9 +1,14 @@
-using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace eSellers.Application.DTOs.Auth;
-
-public class LoginRequest
+namespace eSellers.Application.DTOs.Auth
 {
-    public string Email { get; set; } = string.Empty;
-    public string Password { get; set; } = string.Empty;
+    public class LoginRequest
+    {
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Invalid email format.")]
+        public string Email { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Password is required.")]
+        public string Password { get; set; } = string.Empty;
+    }
 }
