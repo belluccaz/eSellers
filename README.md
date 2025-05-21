@@ -11,6 +11,7 @@
 - **Gráficos:** Recharts
 - **Roteamento:** React Router v6
 - **Mock de dados:** localStorage + arquivos `mocks/`
+- **Com auxílio de IA** em alguns passos do desenvolvimento.
 
 ---
 
